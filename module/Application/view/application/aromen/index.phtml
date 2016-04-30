@@ -1,0 +1,12 @@
+<div class="jumbotron">
+    <h1><?php echo sprintf($this->translate('Aromen-Übersicht'), '<span class="zf-green">', '</span>') ?></h1>
+    <ul>
+        <?php
+            foreach ($this->aromen as $aroma) {
+                ?>
+                    <li><?=$aroma?></li>
+                <?php
+            }
+        ?>
+    </ul>
+</div>

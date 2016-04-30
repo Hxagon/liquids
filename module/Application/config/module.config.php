@@ -22,6 +22,26 @@ return array(
                     ),
                 ),
             ),
+            'aromen' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/aromen',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Aromen',
+                        'action'     => 'index',
+                    ),
+                ),
+            ),
+            'order' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/bestellen',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Order',
+                        'action'     => 'index',
+                    ),
+                ),
+            ),
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
@@ -75,7 +95,9 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => Controller\IndexController::class
+            'Application\Controller\Index' => Controller\IndexController::class,
+            'Application\Controller\Aromen' => Controller\AromenController::class,
+            'Application\Controller\Order' => Controller\OrderController::class,
         ),
     ),
     'view_manager' => array(

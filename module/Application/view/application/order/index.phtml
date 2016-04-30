@@ -1,0 +1,60 @@
+<div class="jumbotron">
+    <h1><?php echo sprintf($this->translate('Bestellung'), '<span class="zf-green">', '</span>') ?></h1>
+    <p>
+        Hier gibt es die Möglichkeit eine Liquid-Bestellung aufzugeben. Es gibt unterschiedliche Nikton-Stärken und
+        natürlich auch alle Aromen, die auf Lager sind. Sollte das Wunsch-Aroma nicht dabei sein, kannst du <a href="#">hier</a> eine entsprechende Bestellung aufgeben.
+        <p>
+        Es können maximal 3 Liquids pro Bestellung verabreitet werden.
+        </p>
+        <div class="label-info">
+            <div>Preise könnt ihr bei mir direkt erfahren, diese werden hier nicht angezeigt</div>
+        </div>
+        </p>
+    </p>
+
+    <div class="form-group form-horizontal">
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="deine@email.de">
+            </div>
+            <div class="form-group">
+                <label for="name">Vorname, Nachname</label>
+                <input type="text" class="form-control" id="name" placeholder="Max, Mustermann">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Handynummer (Falls eine Benachrichtigung erwünscht ist)</label>
+                <input type="tel" class="form-control" id="mobile" placeholder="05551112222">
+            </div>
+
+            <div class="panel">
+                <div class="panel-heading">Liquid 1</div>
+                <div class="panel-body">
+                    <label for="aroma1">Aroma</label>
+                    <select id="aroma1" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <label for="nikotin1">Nikotingehalt</label>
+                    <select id="nikotin1" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <label for="amount1">Menge</label>
+                    <select id="amount1" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-default">Bestellung abschicken</button>
+        </form>
+    </div>
+</div>
